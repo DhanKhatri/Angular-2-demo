@@ -1,0 +1,17 @@
+
+<hr>
+<div class = "col-xl-12">
+  <input #box
+         (keyup.enter) ="addBox(newBox.value)">
+  <button class="btn btn danger"
+          (click) ="addBox(newBox.value)">Add</button>
+  <ul>
+    <li *ngFor = "let box of boxes">{{box}} </li>
+   <li>{{box.value}}</li>
+
+
+  </ul>
+
+
+</div>
+<hr>
